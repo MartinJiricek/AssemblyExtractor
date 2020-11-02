@@ -49,9 +49,6 @@ namespace AssemblyExtractor
                 Console.ReadLine();
             }));
 
-           
-
-            // Run your code from a thread that joins the STA Thread
             t.SetApartmentState(ApartmentState.STA);
             t.Start();
             t.Join();
